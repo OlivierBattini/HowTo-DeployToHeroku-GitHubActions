@@ -1,5 +1,10 @@
-const testModel = require('./data/models/testModel');
+const express = require('express');
 
-console.log('========== STARTING');
-testModel.test();
-console.log('========== DONE, QUITTING');
+const PORT = 8080;
+
+const server = express();
+server
+    .all('/', (request, response) => {
+        response.send('<h1>Hello, world!</h1>');
+    })
+    .listen(PORT, () => console.log(`Listening on ${PORT}`));
