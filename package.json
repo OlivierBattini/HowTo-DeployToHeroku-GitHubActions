@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "pg": "^8.8.0"
+  },
+  "name": "ob-zeng",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js",
+    "start-dev": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlivierBattini/ob-zeng.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlivierBattini/ob-zeng/issues"
+  },
+  "homepage": "https://github.com/OlivierBattini/ob-zeng#readme",
+  "description": ""
+}
