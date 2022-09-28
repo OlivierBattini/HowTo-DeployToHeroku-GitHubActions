@@ -1,14 +1,14 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.2",
     "pg": "^8.8.0"
   },
   "name": "ob-zeng",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "node main.js",
-    "start-dev": "nodemon main.js",
+    "start": "node src/main.js",
+    "start-dev": "nodemon src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
