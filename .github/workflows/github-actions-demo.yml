@@ -1,17 +1,17 @@
-name: Deploy to Heroku
+name: Deploy to Heroku # Name of the GitHub Action
 
 on:
-  push:
-    branches:
-      - main
+  push: # Action triggering the GitHub Action...
+    branches: # ... on the branch specified below
+      - main # <- MODIFY branch name (e.g. "dev")
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the deploy to Heroku action
+      - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "ob-zeng" # Must be unique in Heroku
-          heroku_email: "olivier@olivierbattini.fr"
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}} # <- MODIFY Heroku app name
+          heroku_app_name: "ob-zeng" # <- MODIFY Heroku app name
+          heroku_email: "olivier@olivierbattini.fr" # <- MODIFY Heroku account email
